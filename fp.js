@@ -3,9 +3,8 @@ function increment(n) {
 }
 
 function my_objective(arr, f) {
-    for (let i = 0; i < arr.length; ++i) {
+    for (let i = 0; i < arr.length; ++i)
         arr[i] = f(arr[i])
-    }
 }
 
 function main() {
