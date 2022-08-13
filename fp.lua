@@ -11,7 +11,9 @@ end
 function main()
 	local arr = {0, 1, 2 ,3 ,4}
 	my_objective(arr, increment)
-	for i = 1, 5 do io.write(arr[i] .. " ") end
+	for i = 1, 5 do
+		io.write(arr[i] .. " ")
+	end
 end
 
 main()
