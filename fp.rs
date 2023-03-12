@@ -12,7 +12,7 @@ fn main() {
 	let mut arr: [i32; 5] = [0, 1, 2, 3, 4];
 	my_objective(&mut arr, increment);
 
-	for elem in arr.iter() {
+	for elem in arr {
 		print!("{} ", elem);
 	}
 }
