@@ -17,5 +17,5 @@ int main() {
 
     for (int i = 0; i < ARRSIZ; ++i)
         printf("%d ", arr[i]);
-    putchar('\0');
+    putchar('\n');
 }
