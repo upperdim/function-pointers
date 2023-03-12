@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 interface FunctionWrapper {
 	int methodSignature(int n);
 }
@@ -18,7 +20,6 @@ public class FunctionPointerDemo {
 		FunctionWrapper functionPointer = FunctionPointerDemo::increment;
 		myObjective(arr, functionPointer);
 
-		for (int elem : arr)
-			System.out.print(elem + " ");
+		System.out.println(Arrays.toString(arr));
 	}
 }
