@@ -2,23 +2,23 @@
 #include <vector>
 
 
-void print(const std::vector<int>& arr){
+void print(const std::vector<int>& vec){
     for(const int n : arr)
         std::cout << n << "\n";
     std::cout << std::endl;
 }
 
-void my_objective(std::vector<int>& arr, int (*f)(int)) {
+void my_objective(std::vector<int>& vec, int (*f)(int)) {
     for (int i = 0; i < arr.size(); ++i)
         arr[i] = f(arr[i]);
 }
 
 int main() {
-    std::vector<int> arr = {0, 1, 2, 3, 4};
+    std::vector<int> vec = {0, 1, 2, 3, 4};
 
-    my_objective(arr, [](int n){ return n + 1;});
+    my_objective(vec, [](int n){ return n + 1;});
 
-    print(arr);
+    print(vec);
 
     std::cin.get();
     
