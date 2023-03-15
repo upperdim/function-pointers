@@ -1,9 +1,6 @@
 #include <iostream>
 #include <vector>
 
-int increment(int n) {
-    return n + 1;
-}
 
 void print(const std::vector<int>& arr){
     for(const int n : arr)
