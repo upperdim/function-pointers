@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 
-constexpr size_t ARRSIZ = 5;
-
 int increment(int n) {
     return n + 1;
 }
