@@ -11,7 +11,6 @@ void print(const std::vector<int>& arr){
     std::cout << std::endl;
 }
 
-
 void my_objective(std::vector<int>& arr, int (*f)(int)) {
     for (int i = 0; i < arr.size(); ++i)
         arr[i] = f(arr[i]);
