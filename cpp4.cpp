@@ -10,8 +10,8 @@ struct increment{
 
 
 void my_objective(std::vector<int>& vec, const increment& f) {
-    for (int i = 0; i < arr.size(); ++i)
-        arr[i] = f(arr[i]);
+    for (int i = 0; i < vec.size(); ++i)
+        vec[i] = f(vec[i]);
 }
 
 void print(const std::vector<int>& vec){
